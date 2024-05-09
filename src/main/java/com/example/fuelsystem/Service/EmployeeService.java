@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.vaadin.crudui.crud.CrudListener;
 
 import java.util.Collection;
+import java.util.List;
 
 @Service
 public class EmployeeService implements CrudListener<Employee> {
@@ -37,7 +38,5 @@ public class EmployeeService implements CrudListener<Employee> {
         employeeRepository.delete(employee);
     }
 
-    public Employee findAll(String value) {
 
-    }
 }
