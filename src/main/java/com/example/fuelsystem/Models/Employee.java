@@ -19,12 +19,15 @@ public class Employee {
 
     @Column(name = "email")
     private String email;
+    @Column(name = "employee_number")
+    private String employeeNumber;
 
     @Column(name = "phone_number")
     private String phoneNumber;
 
     @Column(name = "department")
     private String department;
-
-
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }
